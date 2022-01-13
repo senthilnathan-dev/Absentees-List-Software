@@ -1,2 +1,12 @@
 # ignore visual studio code 
 .vscode
+
+# ignore venv folder
+.env
+
+# Temp file
+*.temp.txt
+*.txt.bak
+
+# temp folder
+Src/__pycache__/*
