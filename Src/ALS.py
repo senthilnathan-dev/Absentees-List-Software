@@ -7,10 +7,10 @@ import output as op
 __version__ = "2022.1.1"
 
 # Paths to access the Temp and Data directories. 
-doc_path= os.getcwd()+'\\Src\\Data\\help.txt'
-RM_dupe_path= os.getcwd()+'\\Src\\Temp\\rm_dupe.temp.txt'
-NameList_Path = os.getcwd()+"\\Src\\Data\\NameList.txt"
-absentees_path = os.getcwd()+'\\Src\\Temp\\absentees.temp.txt'
+doc_path= os.getcwd()+'\\Data\\help.txt'
+RM_dupe_path= os.getcwd()+'\\Temp\\rm_dupe.temp.txt'
+NameList_Path = os.getcwd()+"\\Data\\NameList.txt"
+absentees_path = os.getcwd()+'\\Temp\\absentees.temp.txt'
 
 def workingdirectory(path):
     """

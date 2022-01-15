@@ -5,13 +5,13 @@ date = d.now()
 
 def op_terminal(subject,session,strength):
 
-    with open(os.getcwd()+'\\Src\\Temp\\absentees.temp.txt','r') as h1:
+    with open(os.getcwd()+'\\Temp\\absentees.temp.txt','r') as h1:
         absent = h1.readlines()
 
-    with open(os.getcwd()+'\\Src\\Data\\NameList.txt','r') as h2:
+    with open(os.getcwd()+'\\Data\\NameList.txt','r') as h2:
         usernames = h2.readlines()
 
-    with open(os.getcwd()+'\\Src\\Data\\AIDS-Students.txt','r') as h3:
+    with open(os.getcwd()+'\\Data\\AIDS-Students.txt','r') as h3:
         students = h3.readlines()
 
     absentees = []

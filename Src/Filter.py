@@ -5,7 +5,7 @@ def rm_duplicate(obj):
     Filter the duplicates and write in a temprorary file.
     """
 
-    with open(os.getcwd()+"\\Src\\Temp\\rm_dupe.temp.txt",'w') as temp_file:
+    with open(os.getcwd()+"\\Temp\\rm_dupe.temp.txt",'w') as temp_file:
         temp_file.truncate(0)
         students= set()
         for student in obj:
@@ -24,7 +24,7 @@ def st_attended(path):
         n_students.pop(0)
 
     # Store the sorted names(i.e. sorted by first names). 
-    with open(os.getcwd()+"\\Src\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
+    with open(os.getcwd()+"\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
         handle.truncate(0)      # refer: https://www.delftstack.com/howto/python/python-clear-file/
         for line in n_students:
             if line == "\n":
@@ -35,7 +35,7 @@ def st_attended(path):
                 break
 
     # To read the content in the temp file
-    with open(os.getcwd()+"\\Src\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
+    with open(os.getcwd()+"\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
         present =handle.readlines()
 
     rm_duplicate(present)   # To remove the duplicate values in the text file.
