@@ -1,0 +1,8 @@
+ALS(Absentees list software)
+Version: 2022.1.1
+
+OPTIONS:
+--------
+-h or --help            ==> Read the official help document using this command.
+-a or --attendance      ==> Using this option you can gain the Absentees list from a single text file.
+-as or --allsource      ==> Using this option you can gain the Absentees list from two or more text files(This feature is currently under development).
