@@ -9,3 +9,8 @@
 
 # temp folder
 Src/__pycache__/*
+
+# app creation related 
+Src/dist
+Src/build
+Src/*.spec
