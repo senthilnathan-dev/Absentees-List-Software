@@ -2,15 +2,15 @@ import sys,os
 
 import absentees as ab
 import Filter as Ft
-import output 
+import output as op
 
 __version__ = "2022.1.1"
 
 # Paths to access the Temp and Data directories. 
-doc_path= os.getcwd()+'\\Data\\help.txt'
-RM_dupe_path= os.getcwd()+'\\Temp\\rm_dupe.temp.txt'
-NameList_Path = os.getcwd()+"\\Data\\NameList.txt"
-absentees_path = os.getcwd()+'\\Temp\\absentees.temp.txt'
+doc_path= os.getcwd()+'\\Src\\Data\\help.txt'
+RM_dupe_path= os.getcwd()+'\\Src\\Temp\\rm_dupe.temp.txt'
+NameList_Path = os.getcwd()+"\\Src\\Data\\NameList.txt"
+absentees_path = os.getcwd()+'\\Src\\Temp\\absentees.temp.txt'
 
 def workingdirectory(path):
     """
@@ -48,7 +48,7 @@ if __name__ =="__main__":
 
         sub = input("Enter the subject name: ")
         session = input("Enter the timings of the session: ")
-        output.op_terminal(subject= sub, session= session, strength= 58)    # Prints the absentees details in the terminal
+        op.op_terminal(subject= sub, session= session, strength= 58)    # Prints the absentees details in the terminal
     elif ar1 in ['-q','--quit']:
         pass
     elif ar1 in ['-as','--allsource']:
