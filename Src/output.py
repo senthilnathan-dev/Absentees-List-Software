@@ -33,8 +33,6 @@ Absentees:
 ----------\
             """
             )
-            # for i,name in enumerate(absent,start=1):
-            #     print(i,name,end="")
             n = 1
             for i in range(len(absentees)):
                 print(n,students[i],end="")
