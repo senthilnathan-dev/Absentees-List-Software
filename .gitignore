@@ -14,3 +14,5 @@ Src/__pycache__/*
 Src/dist
 Src/build
 Src/*.spec
+*.exe
+*.zip
