@@ -1,8 +1,11 @@
+import os
+
 def rm_duplicate(obj):
     """
     Filter the duplicates and write in a temprorary file.
     """
-    with open("D:\\Python\\programs\\Projects\\Attendance-Project\\Temp\\rm_dupe.temp.txt",'w') as temp_file:
+
+    with open(os.getcwd()+"\\Temp\\rm_dupe.temp.txt",'w') as temp_file:
         temp_file.truncate(0)
         students= set()
         for student in obj:
@@ -13,7 +16,7 @@ def rm_duplicate(obj):
 def st_attended(path):
 
     # Reading the given attendance 
-    with open(f'{path}', 'r', encoding= 'UTF-8') as handle:
+    with open(path, 'r', encoding= 'UTF-8') as handle:
         n_students= handle.readlines()
 
     # To remove the first 3 unwanted lines in the txt file 
@@ -21,7 +24,7 @@ def st_attended(path):
         n_students.pop(0)
 
     # Store the sorted names(i.e. sorted by first names). 
-    with open("D:\\Python\\programs\\Projects\\Attendance-Project\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
+    with open(os.getcwd()+"\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
         handle.truncate(0)      # refer: https://www.delftstack.com/howto/python/python-clear-file/
         for line in n_students:
             if line == "\n":
@@ -32,15 +35,7 @@ def st_attended(path):
                 break
 
     # To read the content in the temp file
-    with open("D:\\Python\\programs\\Projects\\Attendance-Project\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
+    with open(os.getcwd()+"\\Temp\\sort_first_name.temp.txt", 'r+') as handle:
         present =handle.readlines()
 
     rm_duplicate(present)   # To remove the duplicate values in the text file.
-
-if __name__=="__main__":
-    # os.getcwd()
-    # Dir = 'D:\\Python\\programs\\Projects\\Attendance-Project\\Test'
-    # os.chdir(Dir)
-    # filey = '\\11th verbal.txt'
-    # st_attended(Dir+filey)
-    st_attended('Test\\11th verbal.txt')
