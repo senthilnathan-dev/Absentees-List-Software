@@ -35,6 +35,7 @@ def student_absent(Source1,source2,destination):
         with open(destination,'r+') as handle3:
             handle3.truncate(0)
             for i in name_list:
+                i.lower()
                 presence= isthere(present, i)   # Calling the function to find the presence of particular student.
                 if presence == False:
                     handle3.write(i)
