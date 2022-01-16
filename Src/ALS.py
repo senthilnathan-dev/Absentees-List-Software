@@ -54,7 +54,7 @@ if __name__ =="__main__":
 
         clip = input("\nCopy to clipboard [Y/N]:")
         if clip in ['y','Y']:
-            cb.copied()
+            cb.copied(subject=sub, session=session,strength=58)
         else:
             pass
 
