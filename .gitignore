@@ -6,6 +6,7 @@
 
 # Temp file
 *.txt.bak
+*.bak
 
 # temp folder
 Src/__pycache__/*
