@@ -37,6 +37,7 @@ def student_absent(Source1,source2,destination):
             for i in name_list:
                 presence= isthere(present, i)   # Calling the function to find the presence of particular student.
                 if presence == False:
+                    i.lower()
                     handle3.write(i)
 
     except FileNotFoundError as e1:

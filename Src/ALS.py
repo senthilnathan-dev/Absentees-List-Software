@@ -3,6 +3,7 @@ import sys,os
 import absentees as ab
 import Filter as Ft
 import output as op
+import clipboard as cb
 
 __version__ = "2022.1.1"
 
@@ -40,6 +41,7 @@ if __name__ =="__main__":
 
     if ar1 in ['-h','--help']:
         document('help')
+
     elif ar1 in ["-a", "--attendance"]:
         src= input("Paste the entire textfile location: ")
         
@@ -48,7 +50,14 @@ if __name__ =="__main__":
 
         sub = input("Enter the subject name: ")
         session = input("Enter the timings of the session: ")
-        op.op_terminal(subject= sub, session= session, strength= 58)    # Prints the absentees details in the terminal
+        op.op(subject= sub, session= session, strength= 58)    # Prints the absentees details in the terminal
+
+        clip = input("\nCopy to clipboard [Y/N]:")
+        if clip in ['y','Y']:
+            cb.copied(subject=sub, session=session,strength=58)
+        else:
+            pass
+
     elif ar1 in ['-q','--quit']:
         pass
     elif ar1 in ['-as','--allsource']:
