@@ -1,5 +1,5 @@
 ALS(Absentees list software)
-Version: 2022.1.1
+Version: 2022.1.2
 
 OPTIONS:
 --------
