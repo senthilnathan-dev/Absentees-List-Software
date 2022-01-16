@@ -5,7 +5,7 @@ import Filter as Ft
 import output as op
 import clipboard as cb
 
-__version__ = "2022.1.1"
+__version__ = "2022.1.2"
 
 # Paths to access the Temp and Data directories. 
 doc_path= os.getcwd()+'\\Data\\help.txt'
