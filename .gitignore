@@ -10,6 +10,7 @@
 
 # temp folder
 Src/__pycache__/*
+Src/*/__pycache__/*
 
 # app creation related 
 Src/dist
