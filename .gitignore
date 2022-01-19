@@ -20,3 +20,4 @@ Src/*.spec
 *.zip
 
 Src/Data/NameList.txt
+Src/Test
