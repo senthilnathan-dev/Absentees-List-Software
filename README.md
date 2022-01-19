@@ -24,13 +24,14 @@ For installing the latest version see '[Releases][2]'. This software is built fo
 
 ### Guide to install
 
-* Install the installer from the [Realeases][2].  
-  * If any warning message is thrown. Don't worry just install the file.
+* Download the installer from the [Realeases][2].  
+  * If any warning message is thrown. Don't worry just download the file.
 
 * Open the file once installed. By default windows defender throws a window indicating `Don't run`.
 
+![windows defender][3]  
+
 * Just click `more info` and click on the `Run anyway`  
-<!-- ![windows defender][3] -->
 
 * Then choose the location to be installed and click away the install button.  
 
@@ -61,5 +62,5 @@ Currently active for development.
 
 [1]: https://www.instructure.com/en-au 'Canvas'
 [2]: https://github.com/libertarian-senthil/Absentees-List-Software/releases 'Git-Hub Releases'
-<!-- [3]: https://github.com/libertarian-senthil/Absentees-List-Software/blob/2edca1d5b75d02008c24fbb7aaa694b7887a7dda/Src/Data/Windows_defender.jpg 'windows defender' -->
-[help.txt]: \Data\help.txt 'help'
+[3]: Src/Data/Windows_defender.jpg 'windows defender'
+[help.txt]: Src/Data/help.txt 'help'
