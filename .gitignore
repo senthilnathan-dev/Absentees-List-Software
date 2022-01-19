@@ -18,3 +18,5 @@ Src/build
 Src/*.spec
 *.exe
 *.zip
+
+Src/Data/NameList.txt
