@@ -1,4 +1,6 @@
-# ALS Absentees list software
+# ALS Absentees list software 
+
+__**Specifications and procedures for version v1.0.0**__
 
 **Table of contents:**  
 
@@ -51,13 +53,13 @@ Setup the development environment and create a basic project structure.
 
 ### Name List, User Names, Absentees namelist
 
-* Collect the `namelist` from any source that must be sorted accordingly and it must be an `UTF-8` endcoded text file.  
+* Collect the `namelist` from any source that must be sorted accordingly and it must be an `UTF-8` encoded text file.  
 
 * Collect the `Usernames` from Canvas site using web scrapping methods.  
 
 * Store the `Usernames` with their respective Names from the `Namelist` in a JSON file.  
 
-* Collect the `present` namelist from any source but it must be an `UTF-8` endcoded text file.  
+* Collect the `present` namelist from any source but it must be an [`UTF-8`][^1] encoded text file.  
 
 ### Generate absentees
 
@@ -88,3 +90,4 @@ Once after generated the absentees list ask wait for the termination of the proc
 <!-- Links and references -->  
 [canvas]: https://canvas.instructure.com/ 'Canvas login page'  
 [GitHub]: https://github.com/libertarian-senthil/Absentees-List-Software.git 'GitHub page'
+[^1]: https://blog.hubspot.com/website/what-is-utf-8 'UTF-8'
