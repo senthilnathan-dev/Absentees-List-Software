@@ -51,8 +51,8 @@ Open the application's  `ALS.exe` file. it will show optionns
 
 ## Roadmap
 
--[ ] Create a Graphical User Interface.  
--[ ] adding a functionality for relative absentees list generation which will be useful for absentees for periods in a row.  
+- [ ] Create a Graphical User Interface.  
+- [ ] adding a functionality for relative absentees list generation which will be useful for absentees for periods in a row.  
 
 ## Project status
 
